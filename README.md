@@ -29,3 +29,7 @@ The workflow at `.github/workflows/build-signed-ipa.yml` archives the app and ex
 - `TEAM_ID` — Apple Developer Team ID
 
 Set the bundle identifier in `project.pbxproj` to one registered under that team before release. The IPA is uploaded as a 14-day workflow artifact.
+
+## Unsigned build (no Apple account)
+
+Run **Build unsigned IPA** from the Actions tab. It compiles an unsigned, device-targeted `.ipa` and uploads it as an artifact. It cannot be installed on a physical iPhone until it is signed with an Apple-issued certificate and provisioning profile.
