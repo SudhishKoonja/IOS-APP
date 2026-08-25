@@ -23,7 +23,7 @@ struct Period: Identifiable, Codable, Hashable {
     }
 }
 
-struct School: Identifiable, Hashable {
+struct School: Identifiable {
     let id = UUID()
     let name: String
     let district: String
