@@ -13,8 +13,18 @@ enum SchoolDirectory {
 
 enum EventDirectory {
     static let events: [SchoolEvent] = [
-        SchoolEvent(id: "robotics-2026", title: "National Robotics Challenge", date: .now.addingTimeInterval(86400 * 12), location: "Ebène Recreational Park", category: "STEM", capacity: 80, description: "Build, code, and compete with students from around the island."),
-        SchoolEvent(id: "athletics-2026", title: "Inter-College Athletics", date: .now.addingTimeInterval(86400 * 21), location: "Maryse Justin Stadium, Réduit", category: "Sport", capacity: 200, description: "Track, field and team events. Register through your school sports teacher."),
-        SchoolEvent(id: "voices-2026", title: "Young Voices Showcase", date: .now.addingTimeInterval(86400 * 31), location: "Caudan Arts Centre", category: "Arts", capacity: 120, description: "Music, spoken word and theatre performances for secondary students.")
+        SchoolEvent(id: "mcf-live-calendar", title: "Mauritius chess tournaments", date: .now.addingTimeInterval(86400 * 4), location: "Across Mauritius", category: "Chess", capacity: nil, description: "Open the live Mauritius Chess Federation tournament list for youth, inter-college, rapid and open competitions.", sourceName: "Mauritius Chess Federation · Chess-Results", sourceURL: URL(string: "https://chess-results.com/fed.aspx?fed=MRI&lan=1")!, registrationURL: URL(string: "https://chess-results.com/fed.aspx?fed=MRI&lan=1"), ageRange: "Varies by tournament", isVerified: true)
+    ]
+}
+
+enum ActivitySourceDirectory {
+    static let sources: [ActivitySource] = [
+        ActivitySource(id: "mcf", name: "Mauritius Chess Federation", focus: "Chess tournaments and inter-college competitions", url: URL(string: "https://chess-results.com/fed.aspx?fed=MRI&lan=1")!, systemImage: "checkerboard.rectangle"),
+        ActivitySource(id: "nyp", name: "National Youth Parliament", focus: "Debate, citizenship, leadership and public speaking", url: URL(string: "https://mauritiusassembly.govmu.org/mauritiusassembly/")!, systemImage: "building.columns"),
+        ActivitySource(id: "mys", name: "Ministry of Youth & Sports", focus: "Youth hubs, holiday programmes, arts and sports", url: URL(string: "https://mys.govmu.org/")!, systemImage: "figure.run"),
+        ActivitySource(id: "nyc", name: "National Youth Council", focus: "Regional youth programmes and volunteering", url: URL(string: "https://nyc.govmu.org/")!, systemImage: "person.3"),
+        ActivitySource(id: "moc", name: "Mauritius Olympic Committee", focus: "Olympic and grassroots sporting activities", url: URL(string: "https://www.mauritiusolympic.org/category/events/")!, systemImage: "medal"),
+        ActivitySource(id: "jci", name: "JCI Mauritius", focus: "Leadership and public-speaking programmes", url: URL(string: "https://jci.cc/award-winner/public-speaking-club/")!, systemImage: "person.wave.2"),
+        ActivitySource(id: "esu", name: "ESU Mauritius", focus: "School public speaking and international competitions", url: URL(string: "https://www.esu.org/international-esu/esu-mauritius/")!, systemImage: "mic")
     ]
 }

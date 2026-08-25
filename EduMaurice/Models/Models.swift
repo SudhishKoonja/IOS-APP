@@ -31,12 +31,25 @@ struct School: Identifiable {
     let coordinate: CLLocationCoordinate2D
 }
 
-struct SchoolEvent: Identifiable, Hashable {
+struct SchoolEvent: Identifiable, Hashable, Codable {
     let id: String
     let title: String
     let date: Date
     let location: String
     let category: String
-    let capacity: Int
+    let capacity: Int?
     let description: String
+    let sourceName: String
+    let sourceURL: URL
+    let registrationURL: URL?
+    let ageRange: String?
+    let isVerified: Bool
+}
+
+struct ActivitySource: Identifiable, Hashable {
+    let id: String
+    let name: String
+    let focus: String
+    let url: URL
+    let systemImage: String
 }

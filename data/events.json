@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mcf-live-calendar",
+    "title": "Mauritius chess tournaments",
+    "date": "2026-08-30T09:00:00+04:00",
+    "location": "Across Mauritius",
+    "category": "Chess",
+    "capacity": null,
+    "description": "Live youth, inter-college, rapid and open tournament listings from the Mauritius Chess Federation calendar.",
+    "sourceName": "Mauritius Chess Federation · Chess-Results",
+    "sourceURL": "https://chess-results.com/fed.aspx?fed=MRI&lan=1",
+    "registrationURL": "https://chess-results.com/fed.aspx?fed=MRI&lan=1",
+    "ageRange": "Varies by tournament",
+    "isVerified": true
+  }
+]

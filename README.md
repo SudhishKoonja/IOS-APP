@@ -18,6 +18,17 @@ Open `EduMaurice.xcodeproj` in Xcode 16 or later, select an iOS Simulator, and r
 
 The Updates tab deliberately does not scrape Facebook. Before release, configure it against the Ministry's verified page and an approved Meta/API or moderation integration; Facebook posts remain the authoritative source.
 
+## Live youth-activity feed
+
+Do not attempt to scrape every social post. Build a small server-side source registry instead: ingest pages only where the organiser permits automated access, respect `robots.txt`, cache results, preserve the original link/date, and require a human review before publishing to students. Start with the Ministry of Youth and Sports, the Mauritius Sports Council, the Mauritius Olympic Committee and participating youth organisations. For Facebook and Instagram, use an organiser-authorised Meta integration or let organisers submit events through a verified form—not browser scraping.
+
+The implemented activity pipeline has two files:
+
+- `data/candidates.json` is regenerated daily by GitHub Actions from permitted public pages. It is a private review queue and is never shown in the app.
+- `data/events.json` is the verified public feed loaded by the app. After confirming the organiser, date, age range and registration link, copy an approved candidate here using the existing JSON shape.
+
+The current source registry covers Mauritius Chess Federation/Chess-Results, National Youth Parliament, Ministry of Youth & Sports, National Youth Council, Mauritius Olympic Committee, JCI Mauritius and ESU Mauritius. The collector obeys `robots.txt`; inaccessible or disallowed sources are skipped.
+
 ## Signed IPA builds
 
 The workflow at `.github/workflows/build-signed-ipa.yml` archives the app and exports a signed IPA on every manually triggered workflow or `v*` tag. Add these GitHub Actions secrets before using it:
