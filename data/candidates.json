@@ -54,6 +54,33 @@
     "reviewStatus": "needs-review"
   },
   {
+    "id": "d3a3b840106cb0fa30da",
+    "title": "YOUTH CHAMPIONSHIP 2026-U 14",
+    "category": "Chess",
+    "sourceName": "Mauritius Chess Federation",
+    "sourceURL": "https://chess-results.com/tnr1549896.aspx?lan=1",
+    "discoveredAt": "2026-11-24T13:48:02+00:00",
+    "reviewStatus": "needs-review"
+  },
+  {
+    "id": "a4fe3ff2b6922f554132",
+    "title": "YOUTH CHAMPIONSHIP 2026-U 18",
+    "category": "Chess",
+    "sourceName": "Mauritius Chess Federation",
+    "sourceURL": "https://chess-results.com/tnr1549889.aspx?lan=1",
+    "discoveredAt": "2026-11-24T13:48:02+00:00",
+    "reviewStatus": "needs-review"
+  },
+  {
+    "id": "ba0c77accdf7b2ebbff6",
+    "title": "YOUTH CHAMPIONSHIP 2026-U12",
+    "category": "Chess",
+    "sourceName": "Mauritius Chess Federation",
+    "sourceURL": "https://chess-results.com/tnr1549906.aspx?lan=1",
+    "discoveredAt": "2026-11-24T13:48:02+00:00",
+    "reviewStatus": "needs-review"
+  },
+  {
     "id": "f759d0d7e644718c5551",
     "title": "Olympic Youth Day 2026 : Le Comité Olympique Mauricien mobilise la jeunesse autour du thème “Non à la Drogue”",
     "category": "Sport",
